@@ -1,0 +1,9 @@
+{% if day_of_week == 'monday' or day_of_week == 'tuesday' or day_of_week == 'wednesday' or day_of_week == 'thursday' %}
+  {% if hour < 15 %}
+    <p>**¡Envío en 24 horas si haces tu pedido antes de las 15:00!**</p>
+  {% else %}
+    <p>**¡Envío en 48 horas si haces tu pedido antes de las 15:00!**</p>
+  {% endif %}
+{% else %}
+  <p>**El tiempo de entrega es de 2 a 4 días laborables.**</p>
+{% endif %}
